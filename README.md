@@ -1,8 +1,8 @@
 # Projects made at the IMCS UrFU with Python
-Cource name: Languages and technologies of programming <br>
+Cource name: Python Language <br>
 Year: 1 <br>
-:white_check_mark: All done <br> 
-:large_blue_circle: C++ <br>
+🟡 In progress <br> 
+:large_blue_circle: Python <br>
 
 <br>
 
