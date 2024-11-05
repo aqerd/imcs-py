@@ -9,3 +9,4 @@ Year: 1 <br>
 ##### [TF-IDF](https://github.com/aqerd/imcs-py/tree/main/TF-IDF)
 ##### [Markov Chain](https://github.com/aqerd/imcs-py/tree/main/Markov%20Chain)
 ##### [Wrappers](https://github.com/aqerd/imcs-py/tree/main/Wrappers)
+##### [Generators](https://github.com/aqerd/imcs-py/tree/main/Generators)
