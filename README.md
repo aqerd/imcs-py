@@ -1,6 +1,6 @@
 # Projects made at the IMCS UrFU with Python
 Cource name: Python Language <br>
-Year: 1 <br>
+Year: 2 <br>
 🟡 In progress <br> 
 :large_blue_circle: Python <br>
 
