@@ -5,13 +5,13 @@ def prime_filter(func):
     @functools.wraps(func)
     def wrapper(**args):
         numbers = func(**args)
-        print(numbers)
-        for i in numbers:
-            if i > 1:
-                for j in range(2 * i, len(numbers), i):
-                    numbers[j] = 0
-        numbers = [x for x in numbers if x]
-        return numbers
+        sieve = [1] * (max(numbers) + 1)
+        sieve[0], sieve[1] = 0, 0
+        for i in range(2, int(len(sieve) ** 0.5) + 1):
+            if sieve[i]:
+                for j in range(i * i, len(sieve), i):
+                    sieve[j] = 0
+        return [num for num in numbers if sieve[num]]
     return wrapper
 
 @prime_filter

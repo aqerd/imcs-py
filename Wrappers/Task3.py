@@ -3,18 +3,18 @@
 # Должны проходиться тесты, которые написаны с помощью ключевого слова assert
 # Менять можно только код в my_simple_logging_decorator
 
-# import functools
-#
-# def simple_decorator(func):
-#     @functools.wraps(func)
-#     def wrapper(*args, **kwargs):
-#         result = func(args)
-#         print(result, args, func)
-#         return result
-#     return wrapper
+import functools
+
+def simple_decorator(func):
+    @functools.wraps(func)
+    def wrapper(*args):
+        result = func(*args)
+        return result
+    return wrapper
 
 @simple_decorator
 def my_simple_logging_decorator(func):
+    @functools.wraps(func)
     def you_will_never_see_this_name(*args, **kwargs):
         print('calling {}'.format(func.__name__))
         return func(*args, **kwargs)
