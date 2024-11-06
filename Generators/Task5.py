@@ -7,7 +7,7 @@
 import click
 
 def head(lines_count, file):
-    with open(file, 'r') as f:
+    with open(file, 'r', encoding="utf-8") as f:
         for current_line, line in enumerate(f):
             if current_line < lines_count:
                 yield line.rstrip()
