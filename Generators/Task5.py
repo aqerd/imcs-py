@@ -2,6 +2,7 @@
 # используя операторы for и yield. Для работы с параметрами командной стоки можно использовать argparse
 # (https://docs.python.org/3/library/argparse.html) или click (https://click.palletsprojects.com/en/stable/)
 
+# How to run this task:
 # python Generators/Task5.py -n 3 Generators/TextT5.txt
 
 import click
@@ -21,7 +22,7 @@ def hello(n, file):
     """ The head utility shall copy its input files to the standard output,
         ending the output for each file at a designated point.
         Copying shall end at the point in each input file indicated by the -n number option.
-        The option-argument number shall be counted in units of lines. """
+        The option-argument number shall be counted in units of lines"""
     for line in head(n, file):
         click.echo(line)
 
